@@ -1,41 +1,32 @@
-# CloudFormation Template: [Template Name]
-
+# CloudFormation Template: EC2SecurityGroup
 ## Description
-Briefly describe what this CloudFormation template does and its purpose.
+This CloudFormation template defines a set of managed policies for read-only access to various AWS services. The policies are designed to provide granular permissions for billing, containers, and security-related actions.
 
 ## Usage
-Provide instructions on how to use this template:
+Follow these instructions to use this template:
+
 1. Deploy the stack using the AWS Management Console, CLI, or SDK.
 2. Customize any parameters or settings as needed.
-3. Monitor the stack's resources and outputs.
-
+3. Monitor the stack’s resources and outputs.
 ## Prerequisites
-List any prerequisites or requirements for using this template:
-- AWS account
+Before using this template, ensure you have:
+- An AWS account
 - Permissions to create resources defined in the template
 - Any specific configuration (e.g., VPC, IAM roles)
-
 ## Parameters
-Document the parameters used by the template:
-- `Parameter1`: Description of parameter 1.
-- `Parameter2`: Description of parameter 2.
+The template uses the following parameters:
 
+- VpcId: The VPC ID where the security group will be created.
+- SecurityGroupName: Name of the security group to be created.
 ## Resources
-List the key resources created by the template:
-- EC2 instances
-- S3 buckets
-- Lambda functions
-- ...
+The template creates the following key resources:
 
-## Outputs
-Specify any relevant outputs from the stack:
-- `Output1`: Description of output 1.
-- `Output2`: Description of output 2.
+- PopularReadOnlyBilling: A managed policy allowing read-only access to billing-related actions.
+- PopularReadOnlyContainers: A managed policy allowing read-only access to container-related actions.
 
 ## Example Usage
-Provide an example of how to deploy this template with sample parameter values.
+Here’s an example of how to deploy this template with sample parameter values:
 
-## Notes
-Include any additional notes, considerations, or troubleshooting tips.
-
----
+- Deploy the stack using the AWS Management Console.
+- Specify the VPC ID and desired security group name.
+- Verify that the security group is correctly configured.

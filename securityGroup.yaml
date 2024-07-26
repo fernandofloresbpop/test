@@ -4,7 +4,7 @@ Parameters:
     Description: The vpcID where the security group will be created.
   SecurityGroupName:
     Type: String
-    Description: Name of the security group to be created
+    Description: Name of the security group to be created. It has been created.
   
 Resources:
   SecurityGroup:

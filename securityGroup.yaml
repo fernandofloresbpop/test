@@ -1,7 +1,7 @@
 Parameters:
   VpcId:
     Type: AWS::EC2::VPC::Id
-    Description: The vpcID where the security group will be created.
+    Description: The vpcID where the security group will be created. Hello?
   SecurityGroupName:
     Type: String
     Description: Name of the security group to be created. It has been created. Did I do it?

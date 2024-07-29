@@ -1,5 +1,5 @@
-template-file-path: securityGroup.yaml
+template-file-path: stack.yaml
 parameters:
   VpcId: vpc-097e89d6ea16bc9a8
-  SecurityGroupName: secgroup4
+  SecurityGroupName: secgroup5
 tags: {}

@@ -1,23 +1,5 @@
-Parameters:
-  VpcId:
-    Type: AWS::EC2::VPC::Id
-    Description: The vpcID where the security group will be created.
-  SecurityGroupName:
-    Type: String
-    Description: Name of the security group to be created. It has been created.
-  
-Resources:
-  SecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupDescription: Security Group for EIAM project (EC2)
-      GroupName: !Ref SecurityGroupName
-      VpcId: !Ref VpcId
-      SecurityGroupIngress:
-        - CidrIp: 0.0.0.0/0
-          FromPort: 443
-          ToPort: 443
-          IpProtocol: TCP
-      Tags:
-        - Value: !Ref SecurityGroupName
-          Key: Name
+template-file-path: securityGroup.yaml
+parameters:
+  VpcId: vpc-097e89d6ea16bc9a8
+  SecurityGroupName: secgroup5
+tags: {}

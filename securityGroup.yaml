@@ -1,5 +1,3 @@
 template-file-path: securityGroup.yaml
-parameters:
-  VpcId: vpc-097e89d6ea16bc9a8
-  SecurityGroupName: secgroup5
+parameters: {}
 tags: {}

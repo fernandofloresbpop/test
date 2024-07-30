@@ -21,5 +21,3 @@ Resources:
       Tags:
         - Value: !Ref SecurityGroupName
           Key: Nametemplate-file-path: securityGroup.yaml
-parameters: {}
-tags: {}

@@ -20,4 +20,4 @@ Resources:
           IpProtocol: TCP
       Tags:
         - Value: !Ref SecurityGroupName
-          Key: Name
+          Key: HelloWolrd!

@@ -1,4 +1,4 @@
-template-file-path: ./test/securityGroup.yaml
+template-file-path: securityGroup.yaml
 parameters:
   VpcId: vpc-097e89d6ea16bc9a8
   SecurityGroupName: secgroup4
